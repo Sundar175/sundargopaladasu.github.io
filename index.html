@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/17474f8c7b.js" crossorigin="anonymous"></script>
+
+    <!-- <scrpt type="javascript">
+ fun(id)
+ {
+ document.GetElement.ById("Home").style.display="none";
+ document.GetElement.ById("About").style.display="none";
+ document.GetElement.ById("Projects").style.display="none";
+ document.GetElement.ById("Contact").style.display="none";
+ document.GetElement.ById("id").style.display="block";
+ }
+ </scrpt>
+
+
+
+ -->
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <!-- <div class="home" style="display:none;">
+                <h3>
+                 Welcome to KL University Home section
+                </h3>
+            </div> -->
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, This is <span>Sundar</span> <br> <img src="images/university-logo.png">  KL University</h1>
+            </div>
+        </div>
+    </div>
+   <!--about-->
+<div id="about" >
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/pic-4.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I,m a Student studying in KL University.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br> Web/App interfaces</li>
+                        <li><span>Web Developer</span><br>Html/CSS</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li>No Experience</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2017-2018</span><br>Oxford Public School</li>
+                        <li><span>2018-2020</span><br>Sri Chaitanya</li>
+                        <li><span>2021-2025</span><br>Kl University</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------services---------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Developer</h2>
+                <p>Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; user interface design (UI design); authoring, including standardised code and proprietary software; user experience design (UX design); and search engine optimization.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX</h2>
+                <p>Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; user interface design (UI design); authoring, including standardised code and proprietary software; user experience design (UX design); and search engine optimization.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------projects---------->
+<div id="portofolio">
+    <div class="container">
+        <h1 class="sub-tittle">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>
+                        Social Media App
+                    </h3>
+                    <p>
+                        The app connects you to the talented people around the world. Download it from the play store.
+                    </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>
+                        Social Media App
+                    </h3>
+                    <p>
+                        The app connects you to the talented 
+                        people around the world. Download it from the play store.
+                    </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>
+                        Social Media App
+                    </h3>
+                    <p>
+                        The app connects you to the talented 
+                        people around the world. Download it from the play store.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-----------contact me----------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1><br>
+                <p> <i class="fa fa-paper-plane"></i>sundargopaladasu@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.threads.net/@sundargopaladasu"><i class="fa-brands fa-threads"></i> </a>
+                    <a href="https://twitter.com/GSundar2004"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/sundargopaladasu/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sundargopaladasu-243983225/"><i class="fab fa-linkedin"></i></a>
+                </div>  
+                <a href="resume.pdf" download class="btn btn2">Download CV</a>  
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="your Name" required>
+                    <input type="email" name="Email" placeholder="your email" required>
+                    <textarea type="Message" rows="6" placeholder="your message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>
+            Copyright © Sundar. Made with <i class="fas fa-heart"></i>
+        </p>
+    </div>
+</div>  
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    
+    function closemenu(){
+        sidemenu.style.right="-200px"
+    }
+</script>
+</body>
+</html>
